@@ -1,0 +1,9 @@
+---
+ - name: Copying Artifacts
+   hosts: Kubernetes
+   become: true
+   tasks:
+   - name: Copying .war file to Kubernestes host
+     copy:
+      src: /var/lib/jenkins/workspace/Jannat-Project_master/webapp/target/webapp.war
+      dest: /opt/Kubernetes
