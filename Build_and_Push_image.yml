@@ -1,0 +1,13 @@
+---
+- hosts: Localhost
+  become: true
+
+  tasks:
+  - name: Copying War file to Docker Directory
+    copy:
+     src: /var/lib/jenkins/workspace/Jannat-Project_master/webapp/target/webapp.war
+     dest: /opt/Docker
+
+  - name: Building Docker Image from War file
+    command: docker build 
+     
