@@ -4,7 +4,7 @@ pipeline {
     stage('Build with Maven') {
       steps {
         sh '''mvn clean install package
-cp /var/lib/jenkins/workspace/Jannat-Project_master/webapp/target/webapp.war /opt/Docker'''
+ansible-playbook Copy_War_to_Kubernetes_host.yml'''
       }
     }
 
