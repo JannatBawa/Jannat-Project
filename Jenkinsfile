@@ -9,6 +9,12 @@ pipeline {
       }
     }
 
+    stage('Create and Push Image to DockerHub') {
+      steps {
+        sh 'ansible-playbook Build_and_Push_image.yml'
+      }
+    }
+
   }
   environment {
     PATH = "/opt/maven/bin:$PATH"
