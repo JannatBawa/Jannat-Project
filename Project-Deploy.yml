@@ -7,6 +7,12 @@ spec:
     matchLabels:
       app: jannat-devops-project
   replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+       maxSurge: 1
+       maxUnavailable: 1
+
   template:
     metadata:
       labels:
@@ -15,5 +21,6 @@ spec:
       containers:
       - name: jannat-devops-project
         image: jannatbawa/myrepo:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080 
