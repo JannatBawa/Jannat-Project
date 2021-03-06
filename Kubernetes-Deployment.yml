@@ -9,3 +9,6 @@
      command: kubectl apply -f Project-Deploy.yml
      args:
       chdir: /opt/Kubernetes
+
+   - name: Update deployment with new Dockerhub image
+     command: kubectl rollout restart deployment.v1.apps/jannat-deployment
