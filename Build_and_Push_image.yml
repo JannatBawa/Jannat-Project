@@ -1,13 +1,42 @@
 ---
-- hosts: Localhost
+- name: Building and pushing image to Dockerhub
+  hosts: Localhost
   become: true
+  gather_facts: no
 
   tasks:
-  - name: Copying War file to Docker Directory
-    copy:
-     src: /var/lib/jenkins/workspace/Jannat-Project_master/webapp/target/webapp.war
-     dest: /opt/Docker
 
-  - name: Building Docker Image from War file
-    command: docker build 
-     
+   - name: Building Docker Image from War file
+     command: docker build -t jannat-image:latest .
+     args:
+         chdir: "/opt/Docker"
+
+   - name: Login to Dockerhub
+     docker_login:
+      username: jannatbawa
+      password: Jab@319663
+      email: jannat_bawa@yahoo.com
+
+   - name: Tag and Push Image to Dockerhub
+     docker_image:
+      name: jannat-image
+      repository: jannatbawa/myrepo
+      tag: latest
+      push: yes
+
+   - name: Removing the Image from Local Directory
+     docker_image:
+      state: absent
+      name: jannat-image
+      tag: latest 
+
+   - name: Removing Base Image from Local Directory
+     docker_image:
+      state: absent
+      name: jannatbawa/myrepo
+      tag: latest
+
+   - name: Logout from Dockerhub
+     docker_login:
+      state: absent
+      email: jannat_bawa@yahoo.com

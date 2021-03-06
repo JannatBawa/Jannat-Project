@@ -1,0 +1,18 @@
+Collecting docker-py
+  Downloading https://files.pythonhosted.org/packages/23/c7/1fd6d4d620809fe2f323869d719e2dd0086c939b67021303a9ec40f5a05b/docker_py-1.10.6-py2.py3-none-any.whl (50kB)
+Collecting docker-pycreds>=0.2.1 (from docker-py)
+  Downloading https://files.pythonhosted.org/packages/f5/e8/f6bd1eee09314e7e6dee49cbe2c5e22314ccdb38db16c9fc72d2fa80d054/docker_pycreds-0.4.0-py2.py3-none-any.whl
+Requirement already satisfied: six>=1.4.0 in /usr/lib/python3.6/site-packages (from docker-py)
+Collecting websocket-client>=0.32.0 (from docker-py)
+  Downloading https://files.pythonhosted.org/packages/08/33/80e0d4f60e84a1ddd9a03f340be1065a2a363c47ce65c4bd3bae65ce9631/websocket_client-0.58.0-py2.py3-none-any.whl (61kB)
+Collecting requests!=2.11.0,>=2.5.2 (from docker-py)
+  Downloading https://files.pythonhosted.org/packages/29/c1/24814557f1d22c56d50280771a17307e6bf87b70727d975fd6b2ce6b014a/requests-2.25.1-py2.py3-none-any.whl (61kB)
+Collecting chardet<5,>=3.0.2 (from requests!=2.11.0,>=2.5.2->docker-py)
+  Downloading https://files.pythonhosted.org/packages/19/c7/fa589626997dd07bd87d9269342ccb74b1720384a4d739a1872bd84fbe68/chardet-4.0.0-py2.py3-none-any.whl (178kB)
+Collecting certifi>=2017.4.17 (from requests!=2.11.0,>=2.5.2->docker-py)
+  Downloading https://files.pythonhosted.org/packages/5e/a0/5f06e1e1d463903cf0c0eebeb751791119ed7a4b3737fdc9a77f1cdfb51f/certifi-2020.12.5-py2.py3-none-any.whl (147kB)
+Collecting urllib3<1.27,>=1.21.1 (from requests!=2.11.0,>=2.5.2->docker-py)
+  Downloading https://files.pythonhosted.org/packages/23/fc/8a49991f7905261f9ca9df5aa9b58363c3c821ce3e7f671895442b7100f2/urllib3-1.26.3-py2.py3-none-any.whl (137kB)
+Requirement already satisfied: idna<3,>=2.5 in /usr/lib/python3.6/site-packages (from requests!=2.11.0,>=2.5.2->docker-py)
+Installing collected packages: docker-pycreds, websocket-client, chardet, certifi, urllib3, requests, docker-py
+Successfully installed certifi-2020.12.5 chardet-4.0.0 docker-py-1.10.6 docker-pycreds-0.4.0 requests-2.25.1 urllib3-1.26.3 websocket-client-0.58.0
