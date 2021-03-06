@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''mvn clean install package
 '''
-        sh 'ansible-playbook Copy_War_to_Kubernetes_host.yml'
+        sh 'ansible-playbook Copy_War_to_Docker_directory.yml'
       }
     }
 
