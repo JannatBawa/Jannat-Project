@@ -1,4 +1,4 @@
-From tomcat:8.5.63-jdk15-openjdk-buster
+From tomcat:latest
 
 MAINTAINER Jannat Bawa
 
