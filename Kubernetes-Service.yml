@@ -2,7 +2,7 @@
 - name: Creating Kubernetest Service
   hosts: Kubernetes
   become: true
-
+  gather_facts: no
   tasks:
    - name: Creat Service
      command: kubectl apply -f Project-Service.yml
