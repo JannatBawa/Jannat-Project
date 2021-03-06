@@ -2,6 +2,7 @@
  - name: Copying Artifacts
    hosts: Localhost
    become: true
+   gather_facts: no
    tasks:
    - name: Copying .war file to Kubernestes host
      copy:
