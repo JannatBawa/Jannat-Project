@@ -1,0 +1,10 @@
+---
+- name: Creating Kubernetes Deployment
+  hosts: Kubernetes
+  become: true
+
+  tasks:
+   - name: Create Deployment
+     command: kubectl apply -f Project-Deploy.yml
+     args:
+      chdir: /opt/Kubernetes
