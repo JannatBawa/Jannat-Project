@@ -1,3 +1,3 @@
 <h1> Welcome to Hewlett Packard Enterprise   </h1>
 <h2> DevOps Project made by Jannat Bawa </h2>
-<h2> Modifiedl by Jannat </h2>
+<h2> Jannat </h2>
