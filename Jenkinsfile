@@ -1,8 +1,5 @@
 pipeline {
   agent any
-  triggers {
-    githubPush()
-  }
   stages {
     stage('Build Code') {
       steps {
@@ -28,5 +25,8 @@ ansible-playbook Kubernetes-Service.yml'''
   }
   environment {
     PATH = "/opt/maven/bin:$PATH"
+  }
+  triggers {
+    githubPush()
   }
 }
