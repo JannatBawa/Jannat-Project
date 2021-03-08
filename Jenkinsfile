@@ -11,7 +11,7 @@ pipeline {
 
     stage('Create and Push Image to DockerHub') {
       steps {
-        sh 'ansible-playbook Copy_War_to_Docker_directory.yml'
+        sh 'ansible-playbook Build_and_Push_image.yml'
       }
     }
 
