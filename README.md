@@ -24,7 +24,7 @@ JANNAT BAWA - Technical Solution Consultant II
 Certified Jenkins Engineer <br>
 Terraform Certified Associate <br>
 Microsoft Certified Azure Fundamentals <br>
-Juniper Networks Cerified Associate <br>
+Juniper Networks Certified Associate <br>
 Oracle Cloud Infrastructure Foundations 2020 Certified Associate
  
  
