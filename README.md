@@ -20,7 +20,10 @@ Kubernetes<br>
 <h3> Authors</h3>
 JANNAT BAWA - Technical Solution Consultant II
   
-<h6> Certification </h6>
+<h3> Certification </h3>
+Certified Jenkins Engineer
+Terraform Certified Associate
+
  
  
 
