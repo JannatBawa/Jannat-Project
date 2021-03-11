@@ -6,6 +6,9 @@ This is a DevOps project for begineers who want to start their carrier in the De
 <h2> Purpose </h2>
 By following this project, you should be able to setup a DevOps CI/CD Pipeline
 
+<h2> Prerequisites </h2>
+All the IT engineers currently working as a software developers, Cloudops engineers , Infrastructure engineers with the basic understanding of software delevopment lifecyle and the enthusiasm to learn the latest highly demanded technologies, should be able to catcup with the flow.
+
 <h3> Tools Used </h3>
 GIT<br>
 Jenkins<br>
