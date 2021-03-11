@@ -20,10 +20,12 @@ Kubernetes<br>
 <h3> Authors</h3>
 JANNAT BAWA - Technical Solution Consultant II
   
-<h3> Certification </h3>
-Certified Jenkins Engineer
-Terraform Certified Associate
-
+<h3> Certifications </h3>
+Certified Jenkins Engineer <br>
+Terraform Certified Associate <br>
+Microsoft Certified Azure Fundamentals <br>
+Juniper Networks Cerified Associate <br>
+Oracle Cloud Infrastructure Foundations 2020 Certified Associate
  
  
 
