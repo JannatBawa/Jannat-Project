@@ -21,6 +21,7 @@ Kubernetes<br>
 JANNAT BAWA - Technical Solution Consultant II
   
 <h3> Certifications </h3>
+AWS Certified Cloud Practitioner <br>
 Certified Jenkins Engineer <br>
 Terraform Certified Associate <br>
 Microsoft Certified Azure Fundamentals <br>
